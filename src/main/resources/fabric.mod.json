@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "saturated_extras",
+	"version": "${version}",
+	"name": "Saturated Extras",
+	"description": "This mod Adds Extra Blocks and Things to Saturated by Bro omg",
+	"authors": [
+		"ErzeKawek (Extras Owner)",
+		""
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/saturated_extras/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.erzekawek.saturatedextras.SaturatedExtras"
+		],
+		"fabric-datagen": [
+			"net.erzekawek.saturatedextras.SaturatedExtrasDataGenerator"
+		]
+	},
+	"mixins": [
+		"saturated_extras.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
